@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс Магазин</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="150" height="50" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
+        </a>
+        <ul class="site-navigation"><!--Предусмотреть заглавные буквы-->
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+            <li class="cart-link">Корзина</li><!--Предусмотреть иконку корзины-->
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Магазин готовых шаблонов</h1>
+       <!--Фильтры-->
+      <section class="filters-cost">
+        <h2>Стоимость</h2>
+        <!--Границы стоимости-->
+        <label for="id-cost-min">ОТ</label>
+        <input type="text" name="filters-cost-min" id="id-cost-min" value="0">
+        <label for="id-cost-max">ДО</label>
+        <input type="text" name="filters-cost-max" id="id-cost-max" value="15 000">
+      </section>
+      <section class="filters-grid">
+        <h2>Сетка</h2>
+        <label>
+            <input type="radio" name="filters-grid-value" value="Адаптивная" checked>
+            Адаптивная
+        </label><br>
+        <label>
+            <input type="radio" name="filters-grid-value" value="Фиксированная">
+            Фиксированная
+        </label><br>
+        <label>
+            <input type="radio" name="filters-grid-value" value="Резиновая">
+            Резиновая
+        </label>
+      </section>
+      <section class="filtres-future">
+        <h2>Особенности:</h2>
+        <input type="checkbox" name="filtres-future-slider" id="id-future-slider" checked>
+        <label for="subscribe-field">Слайдер</label><br>
+
+        <input type="checkbox" name="filtres-future-privilege" id="id-future-privilege">
+        <label for="id-future-privilege">Блок преимуществ</label><br>
+     
+        <input type="checkbox" name="filtres-future-news" id="id-future-news" checked>
+        <label for="id-future-news">Новости</label><br>
+
+        <input type="checkbox" name="filtres-future-gallery" id="id-future-gallery">
+        <label for="id-future-gallery">Галерея</label><br>
+
+        <input type="checkbox" name="filtres-future-cart" id="id-future-cart">
+        <label for="id-future-cart">Корзина</label><br>
+      </section>
+      <p class="filtres-future-botton">
+          <input type="submit" value="Показать">
+      </p>
+      <!--Фильтры конец-->
+      <!--Сортировка-->
+      <section class="sorting">
+        <h2>Сортировать</h2>
+        <p class="sorting-field">
+          <label>
+            <input type="radio" name="sorting-field-value" value="По цене" checked>
+            По цене
+          </label>
+          <label>
+              <input type="radio" name="sorting-field-value" value="По типу">
+              По типу
+          </label>
+          <label>
+              <input type="radio" name="sorting-field-value" value="По названию">
+              По названию
+          </label>
+        </p>
+        <p class="sorting-order">
+            <label>
+                <input type="radio" name="sorting-field-order" value="По убыванию" checked>
+                По убыванию
+            </label>
+            <label>
+                <input type="radio" name="sorting-field-order" value="По возрастанию">
+                По возрастанию
+            </label>
+        </p>
+      </section>
+      <!--Сортировка конец-->
+      <!--Список товаров-->
+    </main>
+    <footer class="main-ffoter">
+      <div class="main-footer-social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div>
+        <p><b class="main-footer-tagline">Давайте дружить, это выгодно!</b><br>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+      <!--  
+      <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      -->
+    </footer> 
+  </body>
+</html>
