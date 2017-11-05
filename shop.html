@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="150" height="50" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
+          <img src="img/index-logo.jpg" width="150" height="50" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
         </a>
         <ul class="site-navigation"><!--Предусмотреть заглавные буквы-->
           <li><a href="studio.html">Студия</a></li>
@@ -23,7 +23,10 @@
     </header>
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
-       <!--Фильтры-->
+       <!--Фильтры -->
+       <!--3.9. Блок «Стоимость» — при наведении на любой из маркеров появляется
+         указатель cursor: pointer, делать маркеры подвижными не обязательно,
+         цена меняться не должна.-->
       <section class="filters-cost">
         <h2>Стоимость</h2>
         <!--Границы стоимости-->
@@ -32,6 +35,9 @@
         <label for="id-cost-max">ДО</label>
         <input type="text" name="filters-cost-max" id="id-cost-max" value="15 000">
       </section>
+      <!--3.9. Блок «Стоимость» конец-->
+      <!-- 3.8. Фильтр (блоки «Сетка», «Особенности») верстать с помощью формы,
+      кнопка «Показать» отвечает за отправку формы. -->
       <section class="filters-grid">
         <h2>Сетка</h2>
         <label>
@@ -50,7 +56,7 @@
       <section class="filtres-future">
         <h2>Особенности:</h2>
         <input type="checkbox" name="filtres-future-slider" id="id-future-slider" checked>
-        <label for="subscribe-field">Слайдер</label><br>
+        <label for="id-future-slider">Слайдер</label><br>
 
         <input type="checkbox" name="filtres-future-privilege" id="id-future-privilege">
         <label for="id-future-privilege">Блок преимуществ</label><br>
@@ -67,6 +73,7 @@
       <p class="filtres-future-botton">
           <input type="submit" value="Показать">
       </p>
+      <!-- 3.8. Фильтр (блоки «Сетка», «Особенности»)-->
       <!--Фильтры конец-->
       <!--Сортировка-->
       <section class="sorting">
@@ -98,12 +105,114 @@
       </section>
       <!--Сортировка конец-->
       <!--Список товаров-->
+      <!--3.9. Блок «Стоимость» — при наведении на любой из маркеров появляется указатель
+            cursor: pointer, делать маркеры подвижными не обязательно, цена меняться не должна.
+          3.10. Карточка товара: название товара является ссылкой, клик по нему открывает
+            модальное окно с демонстрацией товара (макета нет, модальное окно не делать).
+          3.11. Карточка товара: при наполнении текстом блок с текстом не должен вылезать
+            за границы изображения, кнопка покупки не должна пропадать.
+          3.12. Количество товаров в правом блоке может быть любым,
+            оно не должно ломать страницу.-->
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+        <ul class="catalog-list">
+          <li class="catalog-list-item">
+          <!--Требования к class="catalog-list-item"
+            3.9. Блок «Стоимость» — при наведении на любой из маркеров появляется указатель
+            cursor: pointer, делать маркеры подвижными не обязательно, цена меняться не должна.-->
+            <h3>
+             <a href="#catalog-list-item-form">SEDONA</a>
+            <!--Требования к заголовку товара
+            3.10. Карточка товара: название товара является ссылкой, клик по нему открывает
+            модальное окно с демонстрацией товара (макета нет, модальное окно не делать).-->            
+            </h3>
+            <p class="catalog-item-image">
+              <img src="img/sedona.jpg" width="220" height="165">
+            </p>
+            <p class="catalog-list-item-info">Информационный сайт для туристов</p>
+            <p class="catalog-list-item-price">
+              <!-- Предполагаю вызов диалога по увеличению содержимого Корзины
+              Это кнопка покупки? 
+              3.11. Карточка товара: при наполнении текстом блок с текстом не должен вылезать
+              за границы изображения, кнопка покупки не должна пропадать.-->
+              <a class="button" href="#">9 900РУБ.</a>
+            </p>
+          </li>
+          <li class="catalog-list-item">
+            <h3>
+              <a href="#catalog-list-item-form">PINK APP</a>            
+            </h3>
+            <p class="catalog-item-image">
+              <img src="img/pink-app.jpg" width="220" height="165">
+            </p>
+            <p class="catalog-list-item-info">Продуктивный лендинг приложения для iOS и Android</p>
+            <p class="catalog-list-item-price">
+              <a class="button" href="#">9 900РУБ.</a>
+            </p>
+          </li>
+          <li class="catalog-list-item">
+            <h3>
+              <a href="#catalog-list-item-form">BARBERSHOP</a>            
+            </h3>
+            <p class="catalog-item-image">
+              <img src="img/barbershop.jpg" width="220" height="165">
+            </p>
+            <p class="catalog-list-item-info">Сайт салона красоты. Для мужчин, да.</p>
+            <p class="catalog-list-item-price">
+              <a class="button" href="#">9 900РУБ.</a>
+            </p>
+          </li>
+          <li class="catalog-list-item">
+            <h3>
+              <a href="#catalog-list-item-form">MISHKA</a>            
+            </h3>
+            <p class="catalog-item-image">
+              <img src="img/mishka.jpg" width="220" height="165">
+            </p>
+            <p class="catalog-list-item-info">Интернет-магазин вязанных игрушек</p>
+            <p class="catalog-list-item-price">
+              <a class="button" href="#">9 900РУБ.</a>
+            </p>
+          </li>
+          <li class="catalog-list-item">
+            <h3>
+              <a href="#catalog-list-item-form">A PLUS</a>            
+            </h3>
+            <p class="catalog-item-image">
+              <img src="img/a-plus.jpg" width="220" height="165">
+            </p>
+            <p class="catalog-list-item-info">Лендинг курсов повышения квалификации</p>
+            <p class="catalog-list-item-price">
+              <a class="button" href="#">9 900РУБ.</a>
+            </p>
+          </li>
+          <li class="catalog-list-item">
+            <h3>
+              <a href="#catalog-list-item-form">КВАСТ</a>            
+            </h3>
+            <p class="catalog-item-image">
+              <img src="img/kvass.jpg" width="220" height="165">
+            </p>
+            <p class="catalog-list-item-info">Промо-сайт производителя крафтового кваса</p>
+            <p class="catalog-list-item-price">
+              <a class="button" href="#">9 900РУБ.</a>
+            </p>
+          </li>            
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
     </main>
+
     <footer class="main-ffoter"> 
         <section class="geography">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <img src="img/map.svg" width="100" height="100" alt="Карта">
-          <img src="img/position.svg" width="100" height="100" alt="Нёрдс тут">
+          <img src="img/map.jpg" width="100" height="100" alt="Карта">
+          <img src="img/position.jpg" width="100" height="100" alt="Нёрдс тут">
           <div class="geography-address">
             <h3 class="geography-address-header">NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург,<br>
@@ -136,16 +245,16 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <p><b>Напишите нам</b><p>      
         <p class="message-form-user-name">
-          <label for="user-name">Ваше имя:</label><br>
-          <input type="text" name="user-name" id="name-field" value="Представьтесь, пожалуйста">
+          <label for="id-user-name">Ваше имя:</label><br>
+          <input type="text" name="user-name" id="id-name-field" value="Представьтесь, пожалуйста">
         </p>
         <p class="message-form-email">
-          <label for="email">Ваш e-mail:</label><br>
-          <input type="text" name="email" id="email-field" value="Для отправки ответа"><br>
+          <label for="id-email">Ваш e-mail:</label><br>
+          <input type="text" name="email" id="id-email-field" value="Для отправки ответа"><br>
         </p>
         <p class="message-form-message">
-          <label for="message">Текст письма:</label><br>
-          <textarea name="message" id="comment-field" rows="3">В свободной форме</textarea>
+          <label for="id-message">Текст письма:</label><br>
+          <textarea name="message" id="id-message" rows="3">В свободной форме</textarea>
         </p>
         <p class="message-form-botton">
           <input type="submit" value="ОТПРАВИТЬ">
