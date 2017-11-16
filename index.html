@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Главное меню сайта">
         <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
         </a>
@@ -20,7 +20,8 @@
         <ul class="user-navigation">
             <li class="cart-link">
               <img src="img/cart-icon.svg" width="16" height="16" alt="Корзина">
-              Корзина</li><!--Предусмотреть иконку корзины-->
+              <a href="cart.html">Корзина</a>
+            </li><!--Предусмотреть иконку корзины-->
         </ul>
       </nav>
     </header>
@@ -59,28 +60,31 @@
             <h3 class="products-list-item-header">Веб-Сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <!--Вызов формы заказа. Должен содержать информацию, что это Веб-Сайт-->
-            <span class="button gallery-button gallery-button-order">Заказать</span>
+            <button type="button gallery-button gallery-button-order1" value="web-site">Заказать</button>
+            <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
             <img src="img/illustration-1.png" width="100" height="100" alt="Веб-Сайты">
           </li>
           <li class="products-list-item">
               <h3 class="products-list-item-header">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <!--Вызов формы заказа. Должен содержать информацию, что это Приложения-->
-              <span class="button gallery-button gallery-button-order">Заказать</span>
+              <button type="button gallery-button gallery-button-order2" value="application">Заказать</button>
+              <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
               <img src="img/illustration-2.png" width="100" height="100" alt="Приложения">
           </li>
           <li class="products-list-item">
               <h3 class="products-list-item-header">Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
               <!--Вызов формы заказа. Должен содержать информацию, что это Презентации-->
-              <span class="button gallery-button gallery-button-order">Заказать</span>
+              <button type="button gallery-button gallery-button-order3" value="presentation">Заказать</button>
+              <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
               <img src="img/illustration-3.png" width="100" height="100" alt="Презентации">
           </li>
         </ul>
       </section>
       <section class="about-nerds">
         <h2 class="about-nerds-header">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше коеатива. Работаем не покладая рук, как роботы.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h3 class="about-nerds-products">Выполняем заказы на разработку:</h3>
         <ul class="about-nerds-products-list">
           <li class="about-nerds-products-list-item">Веб-сайтов любой сложности</li>
@@ -111,17 +115,21 @@
           <h2 class="visually-hidden">Наши партнеры</h2>
           <ul class="partners-list">
             <li><a class="partners-list-item1" href="https://htmlacademy.ru">
-              <img src="img/logo-1.png" width="260" height="180" alt="Презентации">
-              HTML Academy</a></li>
+              <img src="img/logo-1.png" width="260" height="180" alt="HTML Academy">
+              <span class="visually-hidden">HTML Academy</span>  
+            </a></li>
             <li><a class="partners-list-item2" href="#">
-              <img src="img/logo-2.png" width="260" height="180" alt="Презентации">
-              Барбершоп Бородинский</a></li>
+              <img src="img/logo-2.png" width="260" height="180" alt="Барбершоп Бородинский">
+              <span class="visually-hidden">Барбершоп Бородинский</span>
+            </a></li>
             <li><a class="partners-list-item3" href="#">
-                <img src="img/logo-3.png" width="260" height="180" alt="Презентации">
-              PINK</a></li>
+                <img src="img/logo-3.png" width="260" height="180" alt="PINK">
+                <span class="visually-hidden">PINK</span>
+            </a></li>
             <li><a class="partners-list-item3" href="#">
-                <img src="img/logo-4.png" width="260" height="180" alt="Презентации">
-              MISHKA</a></li>
+                <img src="img/logo-4.png" width="260" height="180" alt="MISHKA">
+                <span class="visually-hidden">MISHKA</span>
+            </a></li>
           </ul>
       </section>
     </main>
@@ -137,7 +145,7 @@
           </p>
           <p>тел. +7 (812) 275-75-75</p>
           <!--Кнопка вызывает форму-->
-          <span class="button gallery-button gallery-button-order">Напишите нам</span>
+          <button type="button button-letter" value="letter">Напишите нам</button>
         </div>
       </section>
 
@@ -146,13 +154,16 @@
         <ul>
           <li><a class="social-button" href="#">
             <img src="img/vk-icon.svg" width="50" height="50" alt="Вконтакте">
-            Вконтакте</a></li>
+            <span class="visually-hidden">Вконтакте</span>
+          </a></li>
           <li><a class="social-button" href="#">
             <img src="img/fb-icon.svg" width="50" height="50" alt="Фейсбук">
-            Фейсбук</a></li>
+            <span class="visually-hidden">Фейсбук</span>
+          </a></li>
           <li><a class="social-button" href="#">
-              <img src="img/insta-icon.svg" width="50" height="50" alt="Фейсбук">
-            Инстаграм</a></li>
+              <img src="img/insta-icon.svg" width="50" height="50" alt="Инстаграм">
+              <span class="visually-hidden">Инстаграм</span>
+          </a></li>
         </ul>
       </div>
       <div>
@@ -165,19 +176,22 @@
       -->
     </footer> 
     <!--Форма с сообщением-->
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p><b>Напишите нам</b><p>      
+    <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <span class="form-header">Напишите нам</span>
+        <button class="form-close" type="button">Закрыть</button>
+      </p>      
       <p class="message-form-user-name">
         <label for="id-user-name">Ваше имя:</label><br>
-        <input type="text" name="user-name" id="id-name-field" value="Представьтесь, пожалуйста">
+        <input type="text" name="user-name" id="id-name-field" placeholder="Представьтесь, пожалуйста">
       </p>
       <p class="message-form-email">
         <label for="id-email">Ваш e-mail:</label><br>
-        <input type="text" name="email" id="id-email-field" value="Для отправки ответа"><br>
+        <input type="email" name="email" id="id-email-field" placeholder="Для отправки ответа"><br>
       </p>
       <p class="message-form-message">
         <label for="id-message">Текст письма:</label><br>
-        <textarea name="message" id="id-message" rows="3">В свободной форме</textarea>
+        <textarea name="message" id="id-message" rows="3" placeholder="В свободной форме"></textarea>
       </p>
       <p class="message-form-botton">
         <input type="submit" value="ОТПРАВИТЬ">

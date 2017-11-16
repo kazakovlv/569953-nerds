@@ -20,3 +20,27 @@
     padding: 5px 10px;
     background-color: #888888;
 }
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+.form-letter {
+    width: 960px;
+    margin: 0 auto;
+    padding: 50px, 100px, 80px, 100px ;
+    background-color: #ffffff;
+    /*border-radius: 10px;*/
+    box-shadow: 0 0 10px #cccccc;
+}
+.form-header{
+    font-size: 45px;
+    font-family: "Roboto";
+    /*padding: 75px, 0, 50px, 100px;*/   
+}
+.form-filter {
+    font-family: "Roboto";
+    margin: 0 140px;
+}
