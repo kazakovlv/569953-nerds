@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,7 +22,7 @@
         </ul>
         <ul class="user-navigation">
             <li class="cart-link">
-              <img src="img/cart-icon.svg" width="16" height="16" alt="Корзина">
+              <!-- <img src="img/cart-icon.svg" width="16" height="16" alt="Корзина"> -->
               <a href="#">Корзина</a>
             </li><!--Предусмотреть иконку корзины-->
         </ul>
@@ -34,19 +37,19 @@
           <li class="features-list-item">
             <h2 class="features-header">Долго, дорого, скрупулезно.</h2>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="more.html">Узнать больше</a>
+            <a class="features-button" href="#">Узнать больше</a>
             <img src="img/slide1.png" width="760" height="431" alt="Преимущества «Нёрдс»">
           </li>
           <li class="features-list-item">
               <h2 class="features-header">Любим математику как никто другой.</h2>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="button" href="more.html">Узнать больше</a>
+              <a class="features-button" href="#">Узнать больше</a>
               <img src="img/slide2.png" width="760" height="431" alt="Преимущества «Нёрдс»">
           </li>
           <li class="features-list-item">
               <h2 class="features-header">Только ночь, только хардкор.</h2>
               <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="button" href="more.html">Узнать больше</a>
+              <a class="features-button" href="#">Узнать больше</a>
               <img src="img/slide3.png" width="760" height="431" alt="Преимущества «Нёрдс»">
           </li>
 
@@ -60,7 +63,7 @@
             <h3 class="products-list-item-header">Веб-Сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <!--Вызов формы заказа. Должен содержать информацию, что это Веб-Сайт-->
-            <button type="button gallery-button gallery-button-order1" value="web-site">Заказать</button>
+            <button class="products-list-button1" type="button" value="web-site">Заказать</button>
             <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-Сайты">
           </li>
@@ -68,7 +71,7 @@
               <h3 class="products-list-item-header">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <!--Вызов формы заказа. Должен содержать информацию, что это Приложения-->
-              <button type="button gallery-button gallery-button-order2" value="application">Заказать</button>
+              <button class="products-list-button2" type="button" value="application">Заказать</button>
               <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
               <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
           </li>
@@ -76,7 +79,7 @@
               <h3 class="products-list-item-header">Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
               <!--Вызов формы заказа. Должен содержать информацию, что это Презентации-->
-              <button type="button gallery-button gallery-button-order3" value="presentation">Заказать</button>
+              <button class="products-list-button3" type="button" value="presentation">Заказать</button>
               <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
               <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
           </li>
@@ -87,25 +90,25 @@
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h3 class="about-nerds-products">Выполняем заказы на разработку:</h3>
         <ul class="about-nerds-products-list">
-          <li class="about-nerds-products-list-item">Веб-сайтов любой сложности</li>
-          <li class="about-nerds-products-list-item">Мобильные приложения для iOS и Android</li>
-          <li class="about-nerds-products-list-item">Слайдшоу и видео для корпоративных презентаций</li>
+          <li class="about-nerds-products-item">Веб-сайтов любой сложности</li>
+          <li class="about-nerds-products-item">Мобильные приложения для iOS и Android</li>
+          <li class="about-nerds-products-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
         <img class="about-nerds-features-logo" src="img/nerds-illustration.png" width="360" height="208">
         <h3 class="about-nerds-features">С 2004 года любим точность во всем:</h3>
         <ul class="about-nerds-features-list">
           <li class="about-nerds-features-list-item">
-            <b class="about-nerds-features-list-item-value">146<sup class="about-nerds-features-list-item-persent">%</sup></b>
+            <b class="about-nerds-features-value">146<sup class="about-nerds-features-persent">%</sup></b>
             <p>Уровень<br>
             самоотдачи</p>
           </li>
           <li class="about-nerds-features-list-item">
-              <b class="about-nerds-features-list-item-value">100<sup class="about-nerds-features-list-item-persent">%</sup></b>
+              <b class="about-nerds-features-value">100<sup class="about-nerds-features-persent">%</sup></b>
               <p>Соблюдение<br>
               сроков</p>
           </li>
           <li class="about-nerds-features-list-item">
-              <b class="about-nerds-features-list-item-value">50<sup class="about-nerds-features-list-item-persent">%</sup></b>
+              <b class="about-nerds-features-value">50<sup class="about-nerds-features-persent">%</sup></b>
               <p>Минимальная<br>
               предоплата</p>
           </li>
@@ -140,12 +143,12 @@
         <img src="img/map-marker.png" width="231" height="190" alt="Нёрдс тут">
         <div class="geography-address">
           <h3 class="geography-address-header">NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>
+          <p class="geography-address-text">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д.19/8
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
+          <p class="geography-address-text">тел. +7 (812) 275-75-75</p>
           <!--Кнопка вызывает форму-->
-          <button type="button button-letter" value="letter">Напишите нам</button>
+          <button type="button" class="button-letter" value="letter">Напишите нам</button>
         </div>
       </section>
 
@@ -168,7 +171,7 @@
       </div>
       <div>
         <p><b class="main-footer-tagline">Давайте дружить, это выгодно!</b><br>
-          Скидка 10% для друзей из социальных сетей.
+          <span class="main-footer-text">Скидка 10% для друзей из социальных сетей.</span>
         </p>
       </div>
       <!--  
@@ -182,19 +185,19 @@
         <button class="form-close" type="button">Закрыть</button>
       </p>      
       <p class="message-form-user-name">
-        <label for="id-user-name">Ваше имя:</label><br>
+        <label class="form-label" for="id-user-name">Ваше имя:</label><br>
         <input type="text" name="user-name" id="id-name-field" placeholder="Представьтесь, пожалуйста">
       </p>
       <p class="message-form-email">
-        <label for="id-email">Ваш e-mail:</label><br>
+        <label class="form-label" for="id-email">Ваш e-mail:</label><br>
         <input type="email" name="email" id="id-email-field" placeholder="Для отправки ответа"><br>
       </p>
-      <p class="message-form-message">
-        <label for="id-message">Текст письма:</label><br>
+      <p>
+        <label class="form-label" for="id-message">Текст письма:</label><br>
         <textarea name="message" id="id-message" rows="3" placeholder="В свободной форме"></textarea>
       </p>
-      <p class="message-form-botton">
-        <input type="submit" value="ОТПРАВИТЬ">
+      <p>
+        <input type="submit" class="message-form-botton" value="Отправить">
       </p>
     </form> 
      <!--Форма с сообщением конец-->

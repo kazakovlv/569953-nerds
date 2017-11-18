@@ -1,46 +1,184 @@
-.site-navigation {
-    font-family: "Roboto";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    /*font-style: medium;*/
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    background-color: #eeeeee;
-}
-.cart-link {
-
-}
-.user-navigation {
-    font-family: "Roboto";
-    font-size: 16px;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-}
-.social-button {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #888888;
-}
-.visually-hidden {
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;t
+  }
+  a {
+    text-decoration: none;
+  }
+  .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
   }
-.form-letter {
-    width: 960px;
-    margin: 0 auto;
-    padding: 50px, 100px, 80px, 100px ;
-    background-color: #ffffff;
-    /*border-radius: 10px;*/
-    box-shadow: 0 0 10px #cccccc;
+  .main-header {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #eeeeee;
+  }
+.site-navigation,
+.user-navigation {
+    text-transform: uppercase;
 }
-.form-header{
+.features {
+    background-color: #eeeeee;
+}
+.features-header {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+.features-button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fb565a;
+}
+.products-list-item-header {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+.products-list-button1 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fb565a;
+}
+.products-list-button2 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #00ca74;
+}
+.products-list-button3 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #efc84a;
+}
+.about-nerds-header {
     font-size: 45px;
-    font-family: "Roboto";
-    /*padding: 75px, 0, 50px, 100px;*/   
+    line-height: 45px;
+    font-weight: 500; 
 }
-.form-filter {
-    font-family: "Roboto";
-    margin: 0 140px;
+.about-nerds-products {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;   
 }
+.about-nerds-products-item {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.about-nerds-features {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-nerds-features-value {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: 700;
+}
+.about-nerds-features-persent {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: 700;
+}
+.geography-address-header {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.geography-address-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.button-letter {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fb565a;
+}
+.social-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e1e1e1;
+}
+.main-footer-tagline {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;   
+}
+.main-footer-text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.form-header {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.form-label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;   
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+    color: #444444;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+    color: #444444;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+    color: #444444;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+    color: #444444;
+  }
+  .message-form-botton {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fb565a;
+  }
