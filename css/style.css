@@ -18,16 +18,39 @@ body {
     height: 1px;
     margin: -1px;
   }
+  header ul,
+  main ul,
+  footer ul {
+      list-style: none;
+  }
   .main-header {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    color: #000000;
     background-color: #eeeeee;
   }
 .site-navigation,
 .user-navigation {
     text-transform: uppercase;
+}
+.site-navigation a,
+.user-navigation a {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #eeeeee;
+}
+.site-navigation a:hover,
+.user-navigation a:hover {
+   color: #fb565a;
+}
+.site-navigation a:active,
+.user-navigation a:active {
+    color: #bababa;
+}
+.site-navigation-current {
+    border: 2px solid #fb565a;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
 }
 .features {
     background-color: #eeeeee;
@@ -45,6 +68,14 @@ body {
     text-transform: uppercase;
     background-color: #fb565a;
 }
+.features-button:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.features-button:active {
+    color: #e07476;
+    background-color: #d7373b;
+}
 .products-list-item-header {
     font-size: 24px;
     line-height: 30px;
@@ -59,6 +90,14 @@ body {
     text-transform: uppercase;
     background-color: #fb565a;
 }
+.products-list-button1:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.products-list-button1:active {
+    color: #e07476;
+    background-color: #d7373b;
+}
 .products-list-button2 {
     font-size: 16px;
     line-height: 18px;
@@ -67,6 +106,14 @@ body {
     text-transform: uppercase;
     background-color: #00ca74;
 }
+.products-list-button2:hover {
+    color: #ffffff;
+    background-color: #00bc6c;
+}
+.products-list-button2:active {
+    color: #4dc491;
+    background-color: #00aa62;
+}
 .products-list-button3 {
     font-size: 16px;
     line-height: 18px;
@@ -74,6 +121,14 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #efc84a;
+}
+.products-list-button3:hover {
+    color: #ffffff;
+    background-color: #eab534;
+}
+.products-list-button3:active {
+    color: #edc265;
+    background-color: #e5a722;
 }
 .about-nerds-header {
     font-size: 45px;
@@ -129,6 +184,14 @@ body {
     display: inline-block;
     padding: 5px 10px;
     background-color: #e1e1e1;
+}
+.social-button:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.social-button:active {
+    color: #e37376;
+    background-color: #d7373b;
 }
 .main-footer-tagline {
     font-size: 36px;
@@ -213,6 +276,7 @@ background-color: #fb565a;
     line-height: 18px;
     font-weight: 500;
     color: #000000;
+    text-align: center;
     text-transform: uppercase;
     background-color: #eeeeee;
 }
@@ -225,13 +289,60 @@ background-color: #fb565a;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
+    color: #b2b2b2;
     text-transform: uppercase;
 }
+.sorting label:hover {
+    color: #666666;
+}
+.sorting label:active {
+    color: #000000;
+}
+p .sorting-active {
+    color: #000000;   
+}
 .catalog .button {
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
     color: #ffffff;
+    text-align: center;
     background-color: #fb565a;
 }
-.list-style-clear {
+.catalog-list-item a {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+.catalog-list-item-info {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+    background-color: #eeeeee;
+}
+.pagination-list {
     list-style: none;
+}
+.pagination-item a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+    background-color: #eeeeee;
+}
+.pagination-item a:hover {
+    background-color: #dfdfdf;
+}
+.pagination-item a:active {
+    color: #959595;
+    background-color: #d5d5d5;
+}
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
 }

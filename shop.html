@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation" aria-label="Главное меню сайта">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
         </a>
         <ul class="site-navigation"><!--Предусмотреть заглавные буквы-->
@@ -105,8 +105,8 @@
       <!--Сортировка-->
       <section class="sorting">
         <h2>Сортировать</h2>
-        <p class="sorting-field">
-          <label>
+        <p>
+          <label class="sorting-active">
             <input type="radio" name="sorting-field-value" value="По цене" checked>
             По цене
           </label>
@@ -119,8 +119,8 @@
               По названию
           </label>
         </p>
-        <p class="sorting-order">
-            <label>
+        <p>
+            <label class="sorting-active">
                 <!-- <img src="img/icon-down-dir.svg" width="160" height="65" alt="По убыванию"> -->
                 <input type="radio" name="sorting-field-order" value="По убыванию" checked>
                 По убыванию
@@ -150,7 +150,7 @@
             3.9. Блок «Стоимость» — при наведении на любой из маркеров появляется указатель
             cursor: pointer, делать маркеры подвижными не обязательно, цена меняться не должна.-->
             <h3>
-             <a href="#catalog-list-item-form">SEDONA</a>
+             <a href="#">SEDONA</a>
             <!--Требования к заголовку товара
             3.10. Карточка товара: название товара является ссылкой, клик по нему открывает
             модальное окно с демонстрацией товара (макета нет, модальное окно не делать).-->            
@@ -170,7 +170,7 @@
           </li>
           <li class="catalog-list-item">
             <h3>
-              <a href="#catalog-list-item-form">PINK APP</a>            
+              <a href="">PINK APP</a>            
             </h3>
             <p class="catalog-item-image">
               <img src="img/img-pink.jpg" width="360" height="576">
@@ -182,7 +182,7 @@
           </li>
           <li class="catalog-list-item">
             <h3>
-              <a href="#catalog-list-item-form">BARBERSHOP</a>            
+              <a href="#">BARBERSHOP</a>            
             </h3>
             <p class="catalog-item-image">
               <img src="img/img-barbershop.jpg" width="360" height="576">
@@ -194,7 +194,7 @@
           </li>
           <li class="catalog-list-item">
             <h3>
-              <a href="#catalog-list-item-form">MISHKA</a>            
+              <a href="#c">MISHKA</a>            
             </h3>
             <p class="catalog-item-image">
               <img src="img/img-mishka.jpg" width="360" height="576">
@@ -206,7 +206,7 @@
           </li>
           <li class="catalog-list-item">
             <h3>
-              <a href="#catalog-list-item-form">A PLUS</a>            
+              <a href="#">A PLUS</a>            
             </h3>
             <p class="catalog-item-image">
               <img src="img/img-aplus.jpg" width="360" height="576">
@@ -218,7 +218,7 @@
           </li>
           <li class="catalog-list-item">
             <h3>
-              <a href="#catalog-list-item-form">КВАСТ</a>            
+              <a href="#">КВАСТ</a>            
             </h3>
             <p class="catalog-item-image">
               <img src="img/img-kvast.jpg" width="360" height="576">
@@ -244,12 +244,12 @@
         <img src="img/map-marker.png" width="231" height="190" alt="Нёрдс тут">
         <div class="geography-address">
           <h3 class="geography-address-header">NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>
+          <p class="geography-address-text">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д.19/8
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
+          <p class="geography-address-text">тел. +7 (812) 275-75-75</p>
           <!--Кнопка вызывает форму-->
-          <button type="button button-letter" value="letter">Напишите нам</button>
+          <button type="button" class="button-letter" value="letter">Напишите нам</button>
         </div>
       </section>
 
@@ -272,33 +272,35 @@
       </div>
       <div>
         <p><b class="main-footer-tagline">Давайте дружить, это выгодно!</b><br>
-          Скидка 10% для друзей из социальных сетей.
+          <span class="main-footer-text">Скидка 10% для друзей из социальных сетей.</span>
         </p>
       </div>
       <!--  
       <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
       -->
-    </footer>
+    </footer> 
+    <!--Форма с сообщением-->
     <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <span class="form-header">Напишите нам</span>
-        <button class="form-close" type="button">Закрыть</button>
       </p>      
       <p class="message-form-user-name">
-        <label for="id-user-name">Ваше имя:</label><br>
+        <label class="form-label" for="id-user-name">Ваше имя:</label><br>
         <input type="text" name="user-name" id="id-name-field" placeholder="Представьтесь, пожалуйста">
       </p>
       <p class="message-form-email">
-        <label for="id-email">Ваш e-mail:</label><br>
+        <label class="form-label" for="id-email">Ваш e-mail:</label><br>
         <input type="email" name="email" id="id-email-field" placeholder="Для отправки ответа"><br>
       </p>
-      <p class="message-form-message">
-        <label for="id-message">Текст письма:</label><br>
+      <p>
+        <label class="form-label" for="id-message">Текст письма:</label><br>
         <textarea name="message" id="id-message" rows="3" placeholder="В свободной форме"></textarea>
       </p>
-      <p class="message-form-botton">
-        <input type="submit" value="ОТПРАВИТЬ">
+      <p>
+        <input type="submit" class="message-form-botton" value="Отправить">
       </p>
-    </form> 
+    </form>
+    <button class="form-close" type="button">Закрыть</button> 
+     <!--Форма с сообщением конец-->
   </body>
 </html>
