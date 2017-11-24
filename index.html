@@ -10,20 +10,19 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation" aria-label="Главное меню сайта">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
         </a>
-        <ul class="site-navigation"><!--Предусмотреть заглавные буквы-->
-          <li class="site-navigation-current"><a href="index.html">Студия</a></li>
+        <ul class="site-navigation">
+          <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
+          <li><a class="current-page" href="shop.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-            <li class="cart-link">
-              <!-- <img src="img/cart-icon.svg" width="16" height="16" alt="Корзина"> -->
-              <a href="#">Корзина</a>
-            </li><!--Предусмотреть иконку корзины-->
+            <li>
+              <a class="cart-link current-page" href="#">Корзина</a>
+            </li>
         </ul>
       </nav>
     </header>
