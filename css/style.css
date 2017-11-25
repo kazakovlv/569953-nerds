@@ -1,7 +1,7 @@
 body {
 /* Временно для сетки */
     /* background-image: url('../img/view/nerds-index.jpg'); */
-    background-image: url('../img/view/nerds-catalog.jpg');
+    /* background-image: url('../img/view/nerds-catalog.jpg'); */
     background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -800,8 +800,8 @@ background: #d7dcde;
     min-height: 133px;
     margin: 0;
     padding: 0;
-    border: 1px solid rgb(76, 43, 226);
-    box-sizing: border-box;
+    /* border: 1px solid rgb(76, 43, 226);
+    box-sizing: border-box; */
 }
 .catalog {
     margin: 0;
@@ -849,15 +849,116 @@ p .sorting-active {
     /* border: 1px solid rgb(61, 43, 226);
     box-sizing: border-box; */
 }
+/* ************** Карточка товара *************** */
 .catalog-list li {
+    position: relative;
     width: 360px;
     min-height: 617px;
     margin: 0;
     margin-bottom: 33px;
     padding: 0;
-    border: 1px solid rgb(43, 226, 98);
+ /*    border: 1px solid rgb(43, 226, 98);
+    box-sizing: border-box; */
+}
+.catalog-list-item {
+    display:none;
+    position: absolute;
+    display: inline-block;
+    width: 360px;
+    height: 617px;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid rgb(43, 226, 98);
+    box-sizing: border-box; */
+}
+.catalog-list-item .catalog-item-caption {
+    /* ************************* */
+    display:none;
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.catalog-list-item .catalog-item-image {
+    /* ************************* */
+    display:none;
+    position: absolute;
+    width: 360px;
+    height: 576px;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.catalog-item-window,
+.catalog-item-title,
+.catalog-list-item .catalog-list-item-info,
+.catalog-item-price a {
+    display:none;
+}
+.catalog-item-window {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 231px;
+    width: 360px;
+    /* background-color: #eeeeee; */
+    /* border: 1px solid rgb(43, 226, 98);
+    box-sizing: border-box; */
+}
+.catalog-item-title {
+    margin: 0;
+    padding: 0;
+    min-height: 231px;
+    width: 360px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    word-wrap: break-word;
+   /*  border: 1px solid rgb(43, 226, 98);
+    box-sizing: border-box; */
+}
+.catalog-list-item .catalog-list-item-info {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    min-height: 66px;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+   /*  background-color: #eeeeee; */
+}
+.catalog-item-price a {
+    display: block;
+    width: 200px;
+    min-height: 50px;
+    margin-bottom: 41px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    /* background-color: #fb565a; */
     box-sizing: border-box;
 }
+
+/* ************** Карточка товара Конец *************** */
 /* .catalog-list-item a {
     font-size: 18px;
     line-height: 30px;
