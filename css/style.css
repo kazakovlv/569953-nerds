@@ -928,48 +928,84 @@ background: #d7dcde;
 /*     border: 1px solid rgb(125, 226, 43);
     box-sizing: border-box; */
 }
+/* *************** Сортировка ************** */
 .sorting-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     min-height: 133px;
     margin: 0;
     padding: 0;
-    border: 1px solid rgb(76, 43, 226);
+    /* border: 1px solid rgb(76, 43, 226);
+    box-sizing: border-box; */
+}
+.sorting-ascend {
+
+    width: 45px;
+    margin: 0;
+    padding: 0;
+    min-height: 133px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; 
+    /* border: 1px solid rgb(226, 43, 89);
+    box-sizing: border-box; */
+}
+.items-ascend {
+    padding: 0;
+    margin: 0 1px 0 17px;
+}
+.sort-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 40px 0 0;
+    padding: 0;
+    border: 1px solid rgb(226, 43, 89);
+    box-sizing: border-box;
+    border: none;
+}
+.sort-fields h2 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 20px 0 0;
+    padding: 0;
+    border: 1px solid rgb(116, 226, 43);
     box-sizing: border-box;
 }
+.sort-fields ul {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 520px;
+    min-height: 128px;
+    border: 1px solid rgb(226, 43, 89);
+    box-sizing: border-box;
+}
+.sorting-field{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* *************** Сортировка ************** */
 .catalog {
     margin: 0;
     padding: 0;
     /* border: 1px solid rgb(101, 226, 43);
     box-sizing: border-box; */
 }
-.sorting h2 {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-}
-.sorting label {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #b2b2b2;
-    text-transform: uppercase;
-}
-.sorting label:hover {
-    color: #666666;
-}
-.sorting label:active {
-    color: #000000;
-}
-p .sorting-active {
-    color: #000000;   
-}
-/* .catalog .button {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #ffffff;
-    text-align: center;
-    background-color: #fb565a;
-} */
 .catalog-list {
     min-height: 1915px;
     display: flex;
