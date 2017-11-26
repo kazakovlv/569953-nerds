@@ -33,7 +33,7 @@
       <div class="shop-main">
         <section class="filters-cost">
           <h2 class="visually-hidden">Фильтр проектов</h2>
-          <form method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
               <div class="range-filter">
@@ -51,6 +51,63 @@
                   </div>
               </div>
             </fieldset>
+            <fieldset class="filter-radio">
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <!-- <img src="img/radio-on.svg" width="160" height="65" alt="Выделено»"> -->
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filters-grid-value" id="id-filters-grid-adaptive" value="Адаптивная" checked>
+                  <label for="id-filters-grid-adaptive">Адаптивная</label>
+                </li>
+               <!--  <li><br></li> -->
+                <li class="filter-option">
+                  <!-- <img src="img/radio-off.svg" width="160" height="65" alt="Не выделено"> -->
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filters-grid-value" id="id-filters-grid-fix" value="Фиксированная">
+                  <label for="id-filters-grid-fix">Фиксированная</label>  
+                </li>
+                <!-- <li><br></li> -->
+                <li class="filter-option">
+                    <!-- <img src="img/radio-off.svg" width="160" height="65" alt="Не выделено"> -->
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filters-grid-value" id="id-filters-grid-rubber" value="Резиновая" disabled>
+                    <label for="id-filters-grid-rubber">Резиновая</label>  
+                  </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-check-box">
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                 <!--  <img src="img/checkbox-on.svg" width="160" height="65" alt="Выделено»"> -->
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filtres-future-slider" id="id-future-slider" checked>
+                  <label for="id-future-slider">Слайдер</label>
+                </li>
+               <!--  <li><br></li> -->
+                <li class="filter-option">
+                  <!-- <img src="img/checkbox-off.svg" width="160" height="65" alt="Не выделено»"> -->
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filtres-future-privilege" id="id-future-privilege">
+                  <label for="id-future-privilege">Блок преимуществ</label>
+                </li>
+                <!-- <li><br></li> -->
+                <li class="filter-option">
+                  <!-- <img src="img/checkbox-on.svg" width="160" height="65" alt="Выделено»"> -->
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filtres-future-news" id="id-future-news" checked>
+                  <label for="id-future-news">Новости</label>
+                </li>
+               <!--  <li><br></li> -->
+                <li class="filter-option">
+                  <!-- <img src="img/checkbox-off.svg" width="160" height="65" alt="Не выделено»"> -->
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filtres-future-gallery" id="id-future-gallery">
+                  <label for="id-future-gallery">Галерея</label>
+                </li>
+                <!-- <li><br></li> -->
+                <li class="filter-option">
+                  <!-- <img src="img/checkbox-off.svg" width="160" height="65" alt="Не выделено»"> -->
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filtres-future-cart" id="id-future-cart">
+                  <label for="id-future-cart">Корзина</label>
+                </li>
+              </ul> 
+            </fieldset>
+            <button type="submit" class="button filter-button">Показать</button>
           </form>
         </section>
         <div class="sorting-catalog">
