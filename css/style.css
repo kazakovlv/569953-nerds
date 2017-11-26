@@ -194,9 +194,11 @@ footer ul {
     background-color: #d7373b;
 }
 .products {
+    /* width: 1180px; */
+    min-height: 487px;
     margin: 0;
     padding: 0;
-    height: 487px;
+    min-height: 487px;
     /* border: 1px solid brown;
     box-sizing: border-box; */
 }
@@ -204,14 +206,18 @@ footer ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0;
     padding: 60px 0 0 140px;
     min-height: 20px;
-    /* border: 1px solid greenyellow;
-    box-sizing: border-box; */
+    border: 1px solid greenyellow;
+    box-sizing: border-box;
     list-style: none;
 }
   .products-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 300px;
     height: 427px;
     margin-right: 100px;
@@ -220,59 +226,91 @@ footer ul {
     /* border: 1px solid green;
     box-sizing: border-box; */
 }
+.products-list-item-image {
+    order: 0;   
+}
 .products-list-item-header {
+    order: 1;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;    
 }
-.products-list-button1 {
+.products-list-item p {
+    order: 2;
+}
+.products-list-button1,
+.products-list-button2,
+.products-list-button3 {
+    order: 3;
+    border: 0;
+    outline: none;
+    width: 160px;
+    height: 50px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    border-radius: 3px;
+}
+.products-list-button1 {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #fb565a;
+    border: 3px solid #fb565a;
+    box-sizing: border-box;
 }
 .products-list-button1:hover {
     color: #ffffff;
     background-color: #e74246;
+    border: 3px solid #e74246;
+    box-sizing: border-box;
 }
 .products-list-button1:active {
     color: #e07476;
     background-color: #d7373b;
+    border: 3px solid #d7373b;
+    border-top: 3px solid #c13135;
+    box-sizing: border-box;
 }
 .products-list-button2 {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #00ca74;
+    border: 3px solid #00ca74;
+    box-sizing: border-box;
 }
 .products-list-button2:hover {
     color: #ffffff;
     background-color: #00bc6c;
+    border: 3px solid #00bc6c;
+    box-sizing: border-box;
 }
 .products-list-button2:active {
     color: #4dc491;
     background-color: #00aa62;
+    border: 3px solid #00aa62;
+    border-top: 3px solid #009958;
+    box-sizing: border-box;
 }
 .products-list-button3 {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #efc84a;
+    border: 3px solid #efc84a;
+    box-sizing: border-box;
 }
 .products-list-button3:hover {
     color: #ffffff;
     background-color: #eab534;
+    border: 3px solid #eab534;
+    box-sizing: border-box;
 }
 .products-list-button3:active {
     color: #edc265;
     background-color: #e5a722;
+    border: 3px solid #e5a722;
+    border-top: 3px solid #ce961f;
+    box-sizing: border-box;
 }
 .divider {
     margin-left: 140px;

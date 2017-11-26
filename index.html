@@ -8,36 +8,57 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header class="main-header">
-          <nav class="main-navigation" aria-label="Главное меню сайта">
-            <a class="main-header-logo" href="index.html">
-              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
-            </a>
-            <ul class="site-navigation">
-              <li><a class="current-page" href="index.html">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="shop.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li>
-                  <a class="cart-link current-page" href="#">Корзина</a>
-                </li>
-            </ul>
-          </nav>
-        </header>
+    <header class="main-header">
+      <nav class="main-navigation" aria-label="Главное меню сайта">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»"><!--Размеры?-->
+        </a>
+        <ul class="site-navigation">
+          <li><a class="current-page" href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+            <li>
+              <a class="cart-link current-page" href="#">Корзина</a>
+            </li>
+        </ul>
+        </nav>
+      </header>
     <main class="container">
       <section class="features">
         <div class="futures-text">futures-text</div>
         <div class="futures-picture">futures-picture</div>
       </section>
       <section class="products">
+        <h2 class="visually-hidden">Продукты разработки «Нёрдс»</h2>
         <ul class="products-list">
-          <li class="products-list-item">Веб-Сайты</li>
-          <li class="products-list-item">Приложения</li>
-          <li class="products-list-item">Презентации</li>
+          <li class="products-list-item">
+            <h3 class="products-list-item-header">Веб-Сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <!--Вызов формы заказа. Должен содержать информацию, что это Веб-Сайт-->
+            <button class="products-list-button1" type="button" value="web-site">Заказать</button>
+            <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
+            <img class="products-list-item-image" src="img/illustration-1.png" width="300" height="146" alt="Веб-Сайты">
+          </li>
+          <li class="products-list-item">
+              <h3 class="products-list-item-header">Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <!--Вызов формы заказа. Должен содержать информацию, что это Приложения-->
+              <button class="products-list-button2" type="button" value="application">Заказать</button>
+              <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
+              <img class="products-list-item-image" src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+          </li>
+          <li class="products-list-item">
+              <h3 class="products-list-item-header">Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <!--Вызов формы заказа. Должен содержать информацию, что это Презентации-->
+              <button class="products-list-button3" type="button" value="presentation">Заказать</button>
+              <!--<span class="button gallery-button gallery-button-order">Заказать</span>-->
+              <img class="products-list-item-image" src="img/illustration-3.png" width="300" height="146" alt="Презентации">
+          </li>
         </ul>
-        <div class="divider"></div>
       </section>
       <section class="about-nerds">
           <div class="about-nerds-left">
