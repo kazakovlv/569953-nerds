@@ -1,7 +1,7 @@
 body {
 /* Временно для сетки */
     /* background-image: url('../img/view/nerds-index.jpg'); */
-    background-image: url('../img/view/nerds-catalog.jpg');
+    /* background-image: url('../img/view/nerds-catalog.jpg'); */
     background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -671,7 +671,7 @@ footer ul {
     box-sizing: border-box; */
 }
 /* ******************* Форма *************** */
-/* ***************** Чекбоксы т Радио кнопки ********* */
+/* ***************** Чекбоксы И Радио кнопки ********* */
 .filter-radio {
     margin-top: 55px;
 }
@@ -955,6 +955,16 @@ background: #d7dcde;
 .items-ascend {
     padding: 0;
     margin: 0 1px 0 17px;
+    color: #ededed;
+}
+.items-ascend path {
+    fill: #ededed;
+}
+.items-ascend:hover path {
+    fill: #a6a6a6;
+}
+.items-ascend:active path {
+    fill: #231f20;
 }
 .sort-fields {
     display: flex;
@@ -991,13 +1001,20 @@ background: #d7dcde;
     /* border: 1px solid rgb(226, 43, 89);
     box-sizing: border-box; */
 }
-.sorting-field{
+.sorting-field {
     margin: 0 3px 0 23px;
     padding: 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    color: #b2b2b2;
+}
+.sorting-field:hover {
+    color: #a6a6a6;
+}
+.sorting-field:active {
+    color: #231f20;
 }
 /* *************** Сортировка ************** */
 .catalog {
