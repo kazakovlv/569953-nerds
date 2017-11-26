@@ -128,7 +128,6 @@ footer ul {
     color: #bababa;
 }
 .current-page {
-    /* text-decoration: underline; */
     box-sizing: content-box; 
     border: 2px solid #fb565a;
     border-top-width: 0;
@@ -861,7 +860,6 @@ p .sorting-active {
     box-sizing: border-box; */
 }
 .catalog-list-item {
-    display:none;
     position: absolute;
     display: inline-block;
     width: 360px;
@@ -873,7 +871,7 @@ p .sorting-active {
 }
 .catalog-list-item .catalog-item-caption {
     /* ************************* */
-    display:none;
+    /* display: none; */
     position: absolute;
     width: 360px;
     height: 40px;
@@ -882,9 +880,12 @@ p .sorting-active {
     margin: 0;
     padding: 0;
 }
+.catalog-item-caption path {
+    fill: #e9e9e9;
+}
 .catalog-list-item .catalog-item-image {
     /* ************************* */
-    display:none;
+    /* display: none; */
     position: absolute;
     width: 360px;
     height: 576px;
@@ -893,14 +894,9 @@ p .sorting-active {
     margin: 0;
     padding: 0;
 }
-.catalog-item-window,
-.catalog-item-title,
-.catalog-list-item .catalog-list-item-info,
-.catalog-item-price a {
-    display:none;
-}
 .catalog-item-window {
     position: absolute;
+    z-index: 10;
     bottom: 0;
     left: 0;
     display: flex;
@@ -911,7 +907,7 @@ p .sorting-active {
     padding: 0;
     min-height: 231px;
     width: 360px;
-    /* background-color: #eeeeee; */
+    background-color: #eeeeee;
     /* border: 1px solid rgb(43, 226, 98);
     box-sizing: border-box; */
 }
@@ -941,7 +937,7 @@ p .sorting-active {
     font-weight: 400;
     color: #666666;
     text-align: center;
-   /*  background-color: #eeeeee; */
+    background-color: #eeeeee;
 }
 .catalog-item-price a {
     display: block;
@@ -954,26 +950,30 @@ p .sorting-active {
     font-weight: 500;
     color: #ffffff;
     text-align: center;
-    /* background-color: #fb565a; */
+    text-transform: uppercase;
+    background-color: #fb565a;
     box-sizing: border-box;
+    border-radius: 3px;
+}
+.catalog-item-price a:hover {
+    background-color: #e74246;   
+}
+.catalog-item-price a:active {
+    background-color: #d7373b;
+    padding-top: 9px;
+    border-top: 3px solid #c13135;   
+}
+.catalog-item-window {
+    display: none;
+}
+.catalog-list-item:hover .catalog-item-caption path {
+    fill: #4d4d4d;
+}
+.catalog-list-item:hover .catalog-item-window {
+    display: flex;
 }
 
 /* ************** Карточка товара Конец *************** */
-/* .catalog-list-item a {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-}
-.catalog-list-item-info {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #666666;
-    text-align: center;
-    background-color: #eeeeee;
-} */
 
 .pagination-list {
     display: flex;
