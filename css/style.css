@@ -1,6 +1,6 @@
 body {
 /* Временно для сетки */
-    background-image: url('../img/view/nerds-index.jpg');
+    /* background-image: url('../img/view/nerds-index.jpg'); */
     /* background-image: url('../img/view/nerds-catalog.jpg'); */
     background-size: 1440px auto;
     background-repeat: no-repeat;
@@ -142,57 +142,159 @@ footer ul {
     /* border: 1px solid black;
     box-sizing: border-box; */
 }
-.features {
-    margin: 0 0 20px 0;
-    padding: 0;
-    /* Временно для сетки */
-    min-height: 172px;
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid magenta;
-    box-sizing: border-box; */
-    /* background-color: #eeeeee; */
+/* ****************Слайдер**************** */
+.slider-container a {
+    text-decoration: none;
 }
-.features-header {
+.slider-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+
+} 
+.main-header {
+    background-color: #eeeeee;
+    
+    /* Временно для демонстрации */
+    height: 50px;
+}
+.slider {
+    position: relative;
+    background-color: #eeeeee;
+}
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    
+    width: 160px;
+    height: 18px;
+  
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+.slider-controls i {
+    position: relative;
+
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-controls i::after {
+    content: "";
+    
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    
+    width: 18px;
+    height: 18px;
+    
+    background: #ffffff;
+    
+    border-radius: 50%;
+}
+.slider-controls .active::before {
+    content: "";
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+  }
+.slider-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+.slider-item {
+    display: none;
+    padding: 78px 0 80px 0;
+}
+/* ****************** Переключение слайдов ************ */
+.slider-item:nth-child(3) {
+    display: block;
+}
+.slider-item:nth-child(1) {
+    background-image: url('../img/slide1.png');
+    background-repeat: no-repeat;
+    background-position: 93% 18px;
+}
+.slider-item:nth-child(2) {
+    background-image: url("../img/slide2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+  
+.slider-item:nth-child(3) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+}
+.slider-item h3 {
+    max-width: 600px;
+    margin: 0;
+    margin-bottom: 27px;
+
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
 }
-.futures-text {
+.slider-item p {
+    max-width: 430px;
     margin: 0;
-    padding: 0;
-    margin-left: 140px;
-    min-height: 20px;
-    flex-grow: 1;
-    /* border: 1px solid green;
-    box-sizing: border-box;  */
+    margin-bottom: 38px;
 }
-.futures-picture {
-    width: 698px;
-    height: 413px;
-    min-height: 20px;
-    margin-left: auto;
-    margin-right: 171px;
-    /* border: 1px solid red;
-    box-sizing: border-box; */
-    background-image: url('../img/slide1.png');
-}
-.features-button {
+.button {
+    display: block;
+    width: 240px;
+    padding: 13px 0;
+    
     font-size: 16px;
     line-height: 18px;
-    font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    
     background-color: #fb565a;
-}
-.features-button:hover {
-    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+}  
+.button:hover,
+.button:focus {
     background-color: #e74246;
 }
-.features-button:active {
-    color: #e07476;
+  
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+    
     background-color: #d7373b;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
+/* ****************Слайдер Конец**************** */
 .products {
     /* width: 1180px; */
     min-height: 485px;
