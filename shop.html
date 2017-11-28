@@ -16,12 +16,12 @@
         <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a class="current-page" href="shop.html">Магазин</a></li>
+          <li><a class="current-page">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
             <li>
-              <a class="cart-link current-page" href="#">Корзина</a>
+              <a class="cart-link" href="#">Корзина</a>
             </li>
         </ul>
       </nav>
@@ -65,7 +65,7 @@
                 <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filters-grid-value" id="id-filters-grid-rubber" value="Резиновая" disabled>
                     <label for="id-filters-grid-rubber">Резиновая</label>  
-                  </li>
+                </li>
               </ul>
             </fieldset>
             <fieldset class="filter-check-box">
@@ -93,7 +93,7 @@
                 </li>
               </ul> 
             </fieldset>
-            <button type="submit" class="button filter-button">Показать</button>
+            <button type="submit" class="filter-button">Показать</button>
           </form>
         </section>
         <div class="sorting-catalog">
@@ -102,22 +102,16 @@
               <h2>Сортировать:</h2>
               <ul>
                 <li class="sorting-field">
-                  <label>
-                    <input  class="visually-hidden" type="radio" name="sorting-field-value" value="По цене" checked>
-                    По цене
-                  </label>
+                  <input  class="visually-hidden sorting-input-radio" type="radio" name="sorting-field-value" id="id-sorting-field-price" value="По цене" checked>
+                  <label for="id-sorting-field-price">По цене</label>
                 </li>
                 <li class="sorting-field">
-                  <label>
-                    <input  class="visually-hidden" type="radio" name="sorting-field-value" value="По типу">
-                    По типу
-                  </label>
+                  <input  class="visually-hidden sorting-input-radio" type="radio" name="sorting-field-value" id="id-sorting-field-type" value="По типу">
+                  <label for="id-sorting-field-type">По типу</label>
                 </li>
                 <li class="sorting-field">
-                  <label>
-                    <input  class="visually-hidden" type="radio" name="sorting-field-value" value="По названию">
-                    По названию
-                </label>
+                  <input  class="visually-hidden sorting-input-radio" type="radio" name="sorting-field-value" id="id-sorting-field-name" value="По названию">
+                  <label for="id-sorting-field-name"> По названию</label>
                 </li>
               </ul>
             </section>

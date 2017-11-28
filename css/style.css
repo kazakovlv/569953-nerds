@@ -2,10 +2,10 @@ body {
 /* Временно для сетки */
     /* background-image: url('../img/view/nerds-index.jpg'); */
     /* background-image: url('../img/view/nerds-catalog.jpg'); */
-    background-size: 1440px auto;
+    /* background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 10000px;
+    height: 10000px; */
   }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -30,7 +30,7 @@ footer ul {
     min-height: 132px;
     width: 1440px;
     margin: 0 auto;
-    /* background-color: #eeeeee; */
+    background-color: #eeeeee;
     /* background: rgba(234, 255, 45, 0.2);
     box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
 }
@@ -158,12 +158,6 @@ footer ul {
     color: #000000;
 
 } 
-.main-header {
-    background-color: #eeeeee;
-    
-    /* Временно для демонстрации */
-    height: 50px;
-}
 .slider {
     position: relative;
     background-color: #eeeeee;
@@ -980,6 +974,7 @@ footer ul {
     border: 3px solid #eeeeee;
     box-sizing: border-box;
 }
+.filter-button:focus,
 .filter-button:hover {
     background-color: #dfdfdf;
     border: 3px solid #dfdfdf;
@@ -1221,6 +1216,14 @@ background: #d7dcde;
     /* border: 1px solid rgb(61, 43, 226);
     box-sizing: border-box; */
 }
+.sorting-input-radio:active + label,
+.sorting-input-radio:checked + label {
+    color: #000000;
+}
+.sorting-input-radio:hover + label {
+    color: #666666;
+}
+
 /* ************** Карточка товара *************** */
 .catalog-list li {
     position: relative;
@@ -1403,4 +1406,182 @@ background: #d7dcde;
     border: 3px solid #dbdbdb;
     border-radius: 3px;
     box-sizing: border-box;
+}
+/* Всплывающая форма */
+
+.modal {
+    display: none;
+    z-index: 15;
+    position: fixed;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7); */
+    padding: 75px 100px 85px 100px;
+}
+.modal-letter {
+    top: 80px;
+    left: 50%;
+    width: 960px;
+    min-height: 573px;
+    margin-left: -480px;
+    padding: 30px 100px 68px 100px;
+    /* border: 1px solid rgba(233, 10, 21, 0.959); */
+    box-sizing: border-box; 
+}
+.modal-close {
+    position: absolute;
+    top: 77px;
+    right: 89px;
+    
+    border: 0;
+    outline: none;
+
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #fecccd;
+}
+.modal-close::before {
+    transform: rotate(45deg);
+}
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+.modal-close h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.input-name-mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.message-form-user-name {
+     margin: 0 auto 0 0;
+    padding: 0;
+    width: 360px;
+    min-height: 50px;   
+}
+.message-form-email {
+    margin: 0 0 0 auto;
+    padding: 0;
+    width: 360px;
+    min-height: 50px;
+}
+.message-form-email input,
+.message-form-user-name input {
+    border: 0;
+    outline: none;
+
+    margin: 5px 0 0 0;
+    padding: 1px 0 0 12px;
+    width: 345px;
+    min-height: 47px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #444444;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+.form-message {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    width: 760px;
+    min-height: 118px;
+}
+.form-message textarea {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 13px 0 0 12px;
+
+    border: 0;
+    outline: none;
+    
+    width: 745px;
+    resize: vertical;
+    min-height: 102px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #444444;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+.message-form-botton {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    outline: none;
+
+    width: 260px;
+    min-height: 50px;
+    border-radius: 3px;
+    border: 3px solid #fb565a;
+    box-sizing: border-box;
+    background-color: #fb565a;
+}
+.message-form-botton:hover {
+    border: 3px solid #e74246;
+    box-sizing: border-box;
+    background-color: #e74246;
+}
+.message-form-botton:focus {
+    border: 3px solid #e74246;
+    box-sizing: border-box;
+    background-color: #e74246;
+}
+.message-form-botton:active {
+    border: 3px solid #d7373b;
+    border-top-color: #c13135;
+    box-sizing: border-box;
+    background-color: #d7373b;
+}
+.message-form-email input:hover,
+.message-form-user-name input:hover,
+.form-message textarea:hover {
+    color: #bababa;
+    border-color: #b4b9bb;
+}
+.message-form-email input:active,
+.message-form-user-name input:active,
+.form-message textarea:active {
+    color: #767676;
+    border-color: #000000;
+}
+.message-form-email input:focus,
+.message-form-user-name input:focus,
+.form-message textarea:focus {
+    color: #444444;
+    border-color: #000000;
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+    background-color: #fb565a;
+}
+.modal-close:active::before,
+.modal-close:active::after {
+    background-color: #ffeeee;
 }
