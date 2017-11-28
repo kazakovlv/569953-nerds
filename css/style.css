@@ -1135,6 +1135,7 @@ background: #d7dcde;
     box-sizing: border-box; */
 }
 .items-ascend {
+    position: relative;
     padding: 0;
     margin: 0 1px 0 17px;
     color: #ededed;
@@ -1151,18 +1152,13 @@ background: #d7dcde;
 .sorting-radio:checked ~ .icon-radio > path {
     fill: #231f20;
 }
-.items-ascend {
-    position: relative;
-}
 .sorting-radio + label::before {
     content: "";
-    
     position: absolute;
     left: -4px; /* Координаты радиокнопок */
     top: 2px;
     width: 17px;
     height: 17px;
-    
     /* border: 1px solid #000000; */
 }
 .sort-fields {
