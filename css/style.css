@@ -1,8 +1,8 @@
 body {
 /* Временно для сетки */
     /* background-image: url('../img/view/nerds-index.jpg'); */
-    /* background-image: url('../img/view/nerds-catalog.jpg'); */
-    /* background-size: 1440px auto;
+    /* background-image: url('../img/view/nerds-catalog.jpg');
+    background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
     height: 10000px; */
@@ -1147,6 +1147,23 @@ background: #d7dcde;
 }
 .items-ascend:active path {
     fill: #231f20;
+}
+.sorting-radio:checked ~ .icon-radio > path {
+    fill: #231f20;
+}
+.items-ascend {
+    position: relative;
+}
+.sorting-radio + label::before {
+    content: "";
+    
+    position: absolute;
+    left: -4px; /* Координаты радиокнопок */
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    
+    /* border: 1px solid #000000; */
 }
 .sort-fields {
     display: flex;
