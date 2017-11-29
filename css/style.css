@@ -853,6 +853,7 @@ footer ul {
 }
 /* ******************* Форма *************** */
 /* ***************** Чекбоксы И Радио кнопки ********* */
+/* ************ Радио-кнопки *************** */
 .filter-radio {
     margin-top: 55px;
 }
@@ -866,13 +867,84 @@ footer ul {
 }
 .filter-radio legend,
 .filter-check-box legend {
-    margin: 0 0 16px 0;
+    margin: -1px 0 16px 0;
     padding: 0;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-} 
+}
+.filter-input-radio + label::before {
+    content: "";
+  
+    position: absolute;
+    left: -37px; /* Координаты радиокнопок */
+    top: -3px;
+    width: 26px;
+    height: 26px;
+    
+    border: 5px solid #b8b8b8;
+    box-sizing: border-box;
+    border-radius: 50%;
+ }
+ .filter-input-radio:hover + label::before {
+    content: "";
+  
+    position: absolute;
+    left: -37px; /* Координаты радиокнопок */
+    top: -3px;
+    width: 26px;
+    height: 26px;
+    
+    border: 5px solid #444444;
+    box-sizing: border-box;
+    border-radius: 50%;
+ }
+ .filter-input-radio:disabled + label::before,
+ .filter-input-radio:disabled:hover + label::before {
+    content: "";
+  
+    position: absolute;
+    left: -37px; /* Координаты радиокнопок */
+    top: -3px;
+    width: 26px;
+    height: 26px;
+    
+    border: 5px solid #ededed;
+    box-sizing: border-box;
+    border-radius: 50%;
+ }
+.filter-input-radio:checked + label::after {
+    content: "";
+  
+    position: absolute;
+    top: 6px; /* Координаты точек в радиокнопке */
+    left: -28px;
+
+    width: 8px;
+    height: 8px;
+  
+    background-color: #b8b8b8;
+    border-radius: 50%;
+}
+.filter-input-radio:checked:hover + label::after {
+    content: "";
+  
+    position: absolute;
+    top: 6px; /* Координаты точек в радиокнопке */
+    left: -28px;
+
+    width: 8px;
+    height: 8px;
+  
+    background-color: #444444;
+    border-radius: 50%;
+}
+.filter-input:disabled + label,
+.filter-input:disabled:hover + label {
+    color: #bec1c2;
+}
+/* ************ Радио-кнопки Конец *************** */
 .filter ul {
     padding: 0;
     margin: 0;
@@ -890,69 +962,61 @@ footer ul {
     position: relative;
   
     display: block;
+    color: #61686c;
+    cursor: pointer;
+    /* user-select: none; */
+  }
+  .filter-option:hover label {
+    position: relative;
   
+    display: block;
+    color: #444444;
+    cursor: pointer;
+    /* user-select: none; */
+  }
+  .filter-option:disabled:hover label,
+  .filter-option:disabled label {
+    position: relative;
+  
+    display: block;
+    color: #d0d2d3;
     cursor: pointer;
     /* user-select: none; */
   }
   .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-    left: -42px; /* Координаты чекбоксов */
-    top: -2px;
+    left: -37px; /* Координаты чекбоксов */
+    top: 0;
 
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 24px;
 
-    /* border: 2px solid #000000; */
+    /* border: 1px solid #000000; */
+
     background-color: white;
     background-image: url('../img/checkbox-off.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.filter-input-checkbox:checked + label::before {
+    display: none;
+}
 .filter-input-checkbox:checked + label::after {
     content: "";
   
     position: absolute;
-    left: -40px; /* Координаты чекбоксов */
-    top: -2px;
+    left: -37px; /* Координаты чекбоксов */
+    /* left: -42px; */
+    top: 0;
 
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 24px;
     
     background-color: white;
     background-image: url('../img/checkbox-on.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-  }
-  .filter-input-radio + label::before {
-    content: "";
-  
-    position: absolute;
-    left: -38px; /* Координаты радиокнопок */
-    top: -2px;
-    width: 22px;
-    height: 22px;
-    
-    border: 2px solid #000000;
-    border-radius: 50%;
-  }
-  .filter-input-radio:checked + label::after {
-    content: "";
-  
-    position: absolute;
-    top: 7px;
-    left: -29px;
-
-    width: 8px;
-    height: 8px;
-  
-    background-color: #000000;
-    border-radius: 50%;
-  }
-  .filter-input:disabled + label {
-    color: #000000;
-  
-    opacity: 0.5;
   }
 /* ***************** Конец Чекбоксы т Радио кнопки ********* */
 .filter-button {
@@ -984,6 +1048,7 @@ footer ul {
     background-color: #d5d5d5;
     border-top: 3px solid #bfbfbf;
 }
+/* ********** Движки в фильтре ********* */
 .filter-item {
     margin: 0;
     padding: 0;
@@ -1074,8 +1139,8 @@ background: #d7dcde;
 .max-price {
     text-align: right;
 }
-/* ****************** Диапазон цен ************** */
-.form-filter fieldset {
+/* ****************** Диапазон цен Конец ****** */
+/* .form-filter fieldset {
     border: none;
 }
 .form-filter-cost label {
@@ -1094,7 +1159,8 @@ background: #d7dcde;
     line-height: 20px;
     font-weight: 400;
     list-style: none;
-}
+} */
+/* ********** Движки в фильтре конец ********* */
 /* ******************* Форма *************** */
 /* ********** Сортировка + Каталог ********* */
 .sorting-catalog {
