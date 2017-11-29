@@ -1,11 +1,11 @@
 body {
 /* Временно для сетки */
     /* background-image: url('../img/view/nerds-index.jpg'); */
-    /* background-image: url('../img/view/nerds-catalog.jpg');
+    background-image: url('../img/view/nerds-catalog.jpg');
     background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 10000px; */
+    height: 10000px;
   }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -1096,15 +1096,12 @@ background: #d7dcde;
     list-style: none;
 }
 /* ******************* Форма *************** */
+/* ********** Сортировка + Каталог ********* */
 .sorting-catalog {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 760px;
-    /* ********* Временно ****** */
-    /* min-height: 70px; */
-    /* height: 2217px; */
- /* ********* Временно ****** */
     margin: 0 0 0 140px;
     padding: 0;
 /*     border: 1px solid rgb(125, 226, 43);
@@ -1121,16 +1118,72 @@ background: #d7dcde;
     /* border: 1px solid rgb(76, 43, 226);
     box-sizing: border-box; */
 }
-.sorting-ascend {
-
-    width: 45px;
-    margin: 0;
-    padding: 0;
-    min-height: 133px;
+.sort-fields {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center; 
+    align-items: center;
+    margin: 1px 29px 0 0;
+    padding: 0;
+    /* border: 1px solid rgb(174, 43, 226);
+    box-sizing: border-box; */
+    border: none;
+}
+.sort-fields h2 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* border: 1px solid rgb(116, 226, 43);
+    box-sizing: border-box; */
+}
+.sort-fields-list {
+    margin: 5px 0px 0 0;
+    padding: 0;
+    /* align-self: flex-end; */
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    /* align-items: center; */
+
+    width: 520px;
+    /* min-height: 127px; */
+    min-height: 18px;
+
+    /* border: 1px solid rgb(226, 43, 89);
+    box-sizing: border-box; */    
+}
+.sorting-field {
+    margin: 0 3px 0 23px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #b2b2b2;
+}
+.sorting-field:hover {
+    color: #a6a6a6;
+}
+.sorting-field:active {
+    color: #231f20;
+}
+.sorting-ascend {
+
+    width: 32px;
+    margin: 56px 25px 0 0;
+    padding: 0;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+
     /* border: 1px solid rgb(226, 43, 89);
     box-sizing: border-box; */
 }
@@ -1155,63 +1208,13 @@ background: #d7dcde;
 .sorting-radio + label::before {
     content: "";
     position: absolute;
-    left: -4px; /* Координаты радиокнопок */
-    top: 2px;
-    width: 17px;
-    height: 17px;
+    left: -3px; /* Координаты радиокнопок */
+    top: 3px;
+    width: 15px;
+    height: 15px;
     /* border: 1px solid #000000; */
 }
-.sort-fields {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 40px 0 0;
-    padding: 0;
-    border: 1px solid rgb(226, 43, 89);
-    box-sizing: border-box;
-    border: none;
-}
-.sort-fields h2 {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 21px 0 0;
-    padding: 0;
-    /* border: 1px solid rgb(116, 226, 43);
-    box-sizing: border-box; */
-}
-.sort-fields ul {
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
-    width: 520px;
-    min-height: 127px;
-    /* border: 1px solid rgb(226, 43, 89);
-    box-sizing: border-box; */
-}
-.sorting-field {
-    margin: 0 3px 0 23px;
-    padding: 0;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #b2b2b2;
-}
-.sorting-field:hover {
-    color: #a6a6a6;
-}
-.sorting-field:active {
-    color: #231f20;
-}
-/* *************** Сортировка ************** */
+/* *************** Сортировка Конец ************** */
 .catalog {
     margin: 0;
     padding: 0;
