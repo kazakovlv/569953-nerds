@@ -1591,10 +1591,12 @@ background: #d7dcde;
     border-radius: 3px;
     box-sizing: border-box;
 }
-/* Всплывающая форма */
+/* ************ Всплывающая форма *********** */
 
 .modal {
+    
     display: none;
+
     z-index: 15;
     position: fixed;
     color: #000000;
@@ -1768,4 +1770,8 @@ background: #d7dcde;
 .modal-close:active::before,
 .modal-close:active::after {
     background-color: #ffeeee;
+}
+input:invalid {
+    color: #e74246;
+    border-color: #e74246;
 }
