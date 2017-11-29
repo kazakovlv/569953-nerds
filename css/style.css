@@ -1079,7 +1079,7 @@ footer ul {
     outline: none;
     margin: 0;
     padding: 0;
-    margin-top: 31px;
+    margin-top: 30px;
     width: 260px;
     min-height: 50px;
     
@@ -1090,6 +1090,7 @@ footer ul {
     text-transform: uppercase;
     background-color: #eeeeee;
     border-radius: 3px;
+    /* border: 3px solid red; */
     border: 3px solid #eeeeee;
     box-sizing: border-box;
 }
