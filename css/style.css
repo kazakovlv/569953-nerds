@@ -69,14 +69,40 @@ footer ul {
     padding-bottom: 4px;   
 }
 .main-header-logo {
+    position: relative;
     width: 160px;
     height: 65px;
     margin-top: 49px;
-    margin-left: 140px; 
+    margin-left: 140px;
+    opacity: 1; 
     /* Временно для сетки */
     /* border: 1px solid green;
     box-sizing: border-box; */
     /* background-image: url('../img/nerds-logo.svg'); */
+}
+.main-header-logo:after {
+    content:"";
+    position: absolute;
+    width: 160px;
+    height: 65px;        
+    top: 0;
+    left: 0;
+/*     border: 1px solid blueviolet;
+    box-sizing: border-box; */
+ }
+.main-header-logo:hover {
+    width: 160px;
+    height: 65px;
+    margin-top: 49px;
+    margin-left: 140px;
+    opacity: 0.8; 
+}
+.main-header-logo:active {
+    width: 160px;
+    height: 65px;
+    margin-top: 49px;
+    margin-left: 140px;
+    opacity: 0.3; 
 }
 .site-navigation {
     display: flex;
@@ -597,6 +623,26 @@ footer ul {
     min-height: 20px;
     /* border: 1px solid blueviolet;
     box-sizing: border-box; */
+}
+.partners-href {
+    opacity: 0.2;
+    position: relative;
+}
+.partners-href:after {
+    content:"";
+    position: absolute;
+    width: 260px;
+    height: 180px;        
+    top: 0;
+    left: 0;
+/*     border: 1px solid blueviolet;
+    box-sizing: border-box; */
+    }
+.partners-href:hover {
+    opacity: 1;
+}
+.partners-href:active {
+    opacity: 0.1;
 }
 .partners-items-separator {
     width: 2px;
