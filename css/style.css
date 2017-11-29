@@ -1595,7 +1595,7 @@ background: #d7dcde;
 
 .modal {
     
-    display: none;
+    /* display: none; */
 
     z-index: 15;
     position: fixed;
