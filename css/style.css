@@ -370,6 +370,13 @@ footer ul {
     /* border: 1px solid green;
     box-sizing: border-box; */
 }
+.products-form {
+    order: 5;
+    margin: 0;
+    padding: 0;
+/*     border: 1px solid green;
+    box-sizing: border-box; */
+}
 .products-list-button1,
 .products-list-button2,
 .products-list-button3 {
@@ -1595,9 +1602,9 @@ background: #d7dcde;
 
 .modal {
     
-    /* display: none; */
+    display: none;
 
-    z-index: 15;
+    z-index: 150;
     position: fixed;
     color: #000000;
     background-color: #ffffff;
