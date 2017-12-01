@@ -301,5 +301,31 @@
         </div>
       </div>  
     </footer>
+    <!--Форма с сообщением-->
+    <section class="modal modal-letter form-close">
+      <h2 class="form-header">Напишите нам</h2>
+      <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">   
+        <div class="input-name-mail">
+          <p class="message-form-user-name">
+            <label class="form-label" for="id-user-name">Ваше имя:</label><br>
+            <input type="text" name="user-name" id="id-name-field" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="message-form-email">
+            <label class="form-label" for="id-email">Ваш e-mail:</label><br>
+            <input type="email" name="email" id="id-email-field" placeholder="Для отправки ответа"><br>
+          </p>
+        </div>
+        <p class="form-message">
+          <label class="form-label" for="id-message">Текст письма:</label><br>
+          <textarea name="message" id="id-message" rows="3" placeholder="В свободной форме"></textarea>
+        </p>
+        <p class="form-submit">
+          <input type="submit" class="message-form-botton" value="Отправить">
+        </p>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button> 
+    </section>
+    <!--Форма с сообщением конец-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
