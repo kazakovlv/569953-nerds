@@ -1,11 +1,11 @@
 body {
 /* Временно для сетки */
-    /* background-image: url('../img/view/nerds-index.jpg'); */
-    /* background-image: url('../img/view/nerds-catalog.jpg');
+    background-image: url('../img/view/nerds-index.jpg');
+    /* background-image: url('../img/view/nerds-catalog.jpg'); */
     background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 10000px; */
+    height: 10000px;
   }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -27,7 +27,7 @@ footer ul {
     list-style: none;
 }
 .main-header {
-    min-height: 132px;
+    min-height: 115px;
     width: 1440px;
     margin: 0 auto;
     background-color: #eeeeee;
@@ -169,8 +169,9 @@ footer ul {
     box-sizing: border-box; */
 }
 /* ****************Слайдер**************** */
-.slider-container a {
-    text-decoration: none;
+.slider {
+    position: relative;
+    /* background-color: #eeeeee; */
 }
 .slider-container {
     width: 1200px;
@@ -182,24 +183,23 @@ footer ul {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
-
 } 
-.slider {
-    position: relative;
-    background-color: #eeeeee;
-}
 .slider-controls {
     position: absolute;
-    left: 50%;
-    bottom: 104px;
+    /* left: 50%; */
+    left: 48%;
+    bottom: 90px;
     z-index: 100;
     
-    width: 160px;
+    width: 120px;
     height: 18px;
   
     text-align: center;
     font-size: 0;
     transform: translateX(-50%);
+
+    /* border: 1px solid black;
+    box-sizing: border-box; */
 }
 .slider-controls i {
     position: relative;
@@ -211,13 +211,16 @@ footer ul {
 
     border-radius: 50%;
     cursor: pointer;
+
+    /* border: 1px solid blue;
+    box-sizing: border-box; */
 }
 .slider-controls i::after {
     content: "";
     
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 0;
+    left: 0;
     z-index: 1;
     
     width: 18px;
@@ -226,13 +229,16 @@ footer ul {
     background: #ffffff;
     
     border-radius: 50%;
+
+    /* border: 1px solid green;
+    box-sizing: border-box; */
 }
 .slider-controls .active::before {
     content: "";
     
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 25%;
+    top: 25%;
     z-index: 2;
     
     width: 4px;
@@ -254,7 +260,7 @@ footer ul {
     padding: 78px 0 80px 0;
 }
 /* ****************** Переключение слайдов ************ */
-.slider-item:nth-child(3) {
+.slider-item:nth-child(1) {
     display: block;
 }
 .slider-item:nth-child(1) {
@@ -275,7 +281,7 @@ footer ul {
 .slider-item h3 {
     max-width: 600px;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 
     font-size: 55px;
     line-height: 55px;
@@ -286,11 +292,11 @@ footer ul {
     margin: 0;
     margin-bottom: 38px;
 }
-.button {
+.slider-item-button {
     display: block;
     width: 240px;
-    padding: 13px 0;
-    
+    /* min-height: 50px; */
+    padding: 16px 0;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -302,12 +308,12 @@ footer ul {
     border-radius: 3px;
     border: none;
 }  
-.button:hover,
-.button:focus {
+.slider-item-button:hover,
+.slider-item-button:focus {
     background-color: #e74246;
 }
   
-.button:active {
+.slider-item-button:active {
     color: rgba(255, 255, 255, 0.3);
     
     background-color: #d7373b;
@@ -328,7 +334,7 @@ footer ul {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
-    padding: 60px 0 0 140px;
+    padding: 82px 0 0 140px;
     min-height: 20px;
     list-style: none;
     /* border: 1px solid greenyellow;
@@ -515,7 +521,7 @@ footer ul {
 }
 .about-nerds-products-list {
     /* Для MS IE EDGE */
-    margin: 25px 0 0 0;
+    margin: 12px 0 0 0;
     /* Для Chrome */
     /* margin: 26px 0 0 36px; */
     padding: 0;
@@ -529,9 +535,11 @@ footer ul {
 }
 .about-nerds-products-item {
     position: relative;
-    padding-left: 36px; 
+    padding-left: 36px;
+    padding-top: 0; 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 48px;
+    /* line-height: 24px; */
     font-weight: 400;
 }
 .about-nerds-products-item::before {
@@ -539,7 +547,7 @@ footer ul {
     position: absolute;
     width: 25px;
     height: 2px;
-    top: 10px;
+    top: 22px;
     left: 1px;
     background-color: #fb565a;
 }
@@ -655,7 +663,8 @@ footer ul {
     margin: 0 18px 0 0;
     padding: 0;
     height: 52px;
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
+    background-color: red;
 }
 .partners-logo1{
     margin: 63px 0 0 32px;
