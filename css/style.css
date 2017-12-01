@@ -1,11 +1,11 @@
 body {
 /* Временно для сетки */
-    background-image: url('../img/view/nerds-index.jpg');
+    /* background-image: url('../img/view/nerds-index.jpg'); */
     /* background-image: url('../img/view/nerds-catalog.jpg'); */
-    background-size: 1440px auto;
+    /* background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 10000px;
+    height: 10000px; */
   }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -171,7 +171,7 @@ footer ul {
 /* ****************Слайдер**************** */
 .slider {
     position: relative;
-    /* background-color: #eeeeee; */
+    background-color: #eeeeee;
 }
 .slider-container {
     width: 1200px;
@@ -640,7 +640,6 @@ footer ul {
     box-sizing: border-box; */
 }
 .partners-href {
-    opacity: 0.2;
     position: relative;
 }
 .partners-href:after {
@@ -653,12 +652,6 @@ footer ul {
 /*     border: 1px solid blueviolet;
     box-sizing: border-box; */
     }
-.partners-href:hover {
-    opacity: 1;
-}
-.partners-href:active {
-    opacity: 0.1;
-}
 .partners-items-separator {
     width: 2px;
     margin: 0 18px 0 0;
@@ -672,7 +665,7 @@ footer ul {
     min-height: 20px;
 }
 .partners-logo2{
-    margin: 49px 0 0 29px;
+    margin: 48px 0 0 29px;
     padding: 0;
     min-height: 20px;
 }
@@ -686,7 +679,15 @@ footer ul {
     padding: 0;
     min-height: 20px;
 }
-
+.partners-img {
+	opacity: 0.2;
+}
+.partners-img:hover {
+    opacity: 1;
+}
+.partners-img:active {
+    opacity: 0.1;
+}
 .main-foter {
     width: 1440px;
     min-height: 713px;
@@ -704,7 +705,7 @@ footer ul {
     padding: 0;
     background-image: url('../img/map.png');
     /* border: 1px solid rgb(83, 43, 226);
-    box-sizing: border-box;   */
+    box-sizing: border-box;  */ 
 }
 .geography-address {
     display: flex;
