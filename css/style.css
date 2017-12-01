@@ -460,8 +460,9 @@ footer ul {
     padding: 0;
     height: 2px;
     width: 1160px;
-    /* background-color: red; */
     background-color: #eeeeee;
+    /* background-color: red; */
+    
 }
 .main-bottom {
     margin: 0;
@@ -471,7 +472,7 @@ footer ul {
 .about-nerds {
     display: flex;
     flex-direction: row;
-    margin: 40px 0 0 0;
+    margin: 38px 0 0 0;
     padding: 0 0 0 140px;
     min-height: 486px;
     /* border: 1px solid greenyellow;
@@ -502,7 +503,7 @@ footer ul {
     font-weight: 500; 
 }
 .about-nerds-text {
-    margin: 32px 0 0 0;
+    margin: 34px 0 0 0;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
@@ -663,8 +664,7 @@ footer ul {
     margin: 0 18px 0 0;
     padding: 0;
     height: 52px;
-    /* background-color: #eeeeee; */
-    background-color: red;
+    background-color: #eeeeee;
 }
 .partners-logo1{
     margin: 63px 0 0 32px;
