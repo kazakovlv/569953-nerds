@@ -33,12 +33,14 @@
         <div class="slider-container">
           <h2 class="visually-hidden">Преимущества</h2>
         <!-- <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle"> -->
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle"> -->
+        
+        <!-- class="active" Переключение радио кнопки  -->
           <div class="slider-controls">
+            <i></i>
+            <i></i>
             <i class="active"></i>
-            <i></i>
-            <i></i>
             <!-- <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
             <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
             <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label> -->
@@ -216,7 +218,7 @@
       </div>  
     </footer>
     <!--Форма с сообщением-->
-    <section class="modal modal-letter">
+    <section class="modal modal-letter form-close">
       <h2 class="form-header">Напишите нам</h2>
       <form class="form-letter" action="https://echo.htmlacademy.ru" method="post">   
         <div class="input-name-mail">
@@ -239,6 +241,80 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button> 
     </section>
-     <!--Форма с сообщением конец-->
+    <!--Форма с сообщением конец-->
+    <!-- ****** Java Script ******** -->
+    <script>
+      var WriteButton = document.querySelector(".button-letter");
+      var popup = document.querySelector(".modal-letter");
+      var CloseButton = popup.querySelector(".modal-close");
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=user-name]");
+      var email = popup.querySelector("[name=email]");
+      var textMessage = popup.querySelector("[name=message]");
+      var storageLogin;
+      var storageEmail;
+
+      WriteButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("form-close");
+        popup.classList.add("modal-showing");
+        try
+        {
+          storageLogin = localStorage.getItem("login");
+          storageEmail = localStorage.getItem("email");
+          if(storageLogin)
+          {
+            login.value = storageLogin;
+            email.value = storageEmail;
+            textMessage.focus();
+          } else {
+            login.focus();
+          }
+          
+        }
+        catch (error)
+        {
+          login.focus();
+        }
+      });
+
+      CloseButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("form-close");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if(!login.value) {
+          evt.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+          login.focus();
+        } else {
+          if(!email.value) {
+            evt.preventDefault();
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
+            email.focus();
+          } else {
+            localStorage.setItem("login", login.value);
+            localStorage.setItem("email", email.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-showing")) {
+            popup.classList.remove("modal-showing");
+            popup.classList.remove("modal-error");
+            popup.classList.add("form-close");
+          }
+        }
+      });
+    </script>
+    <!-- ****** Java Script Конец ******** -->
   </body>
 </html>
