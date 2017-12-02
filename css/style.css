@@ -881,7 +881,7 @@ footer ul {
 }
 .shop-header {
     width: 1440px;
-    min-height: 222px;
+    min-height: 122px;
     background-color: #eeeeee;
     text-align: center;
     /* border: 1px solid rgb(43, 226, 171);
@@ -889,10 +889,13 @@ footer ul {
 }
 .shop-header h1 {
     display: inline-block;
-    margin: 60px 140px 105px 140px;
+    margin: 77px 140px 107px 140px;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+
+    /* border: 1px solid red;
+    box-sizing: border-box; */
     /* text-align: center; */
 }
 .shop-main {
