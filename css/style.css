@@ -325,8 +325,8 @@ footer ul {
     min-height: 485px;
     margin: 0;
     padding: 0;
-    border: 1px solid brown;
-    box-sizing: border-box;
+    /* border: 1px solid brown;
+    box-sizing: border-box; */
 }
   .products-list {
     display: flex;
@@ -338,8 +338,8 @@ footer ul {
     /* padding: 82px 0 0 140px; */
     min-height: 20px;
     list-style: none;
-    border: 1px solid greenyellow;
-    box-sizing: border-box;
+    /* border: 1px solid greenyellow;
+    box-sizing: border-box; */
 }
   .products-list-item {
     display: flex;
@@ -361,6 +361,7 @@ footer ul {
     order: 1;
     margin: 25px 0 0 0;
     padding: 0;
+    width: 280px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -369,9 +370,9 @@ footer ul {
     /* border: 1px solid green;
     box-sizing: border-box; */    
 }
-.products-list-item p {
+.products-list-item-text {
     order: 2;
-    margin: 16px 0 36px 0;
+    margin: 16px 0 34px 0;
     padding: 0;
 
     width: 280px;
