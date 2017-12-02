@@ -1,11 +1,11 @@
 body {
 /* Временно для сетки */
-    /* background-image: url('../img/view/nerds-index.jpg'); */
+    background-image: url('../img/view/nerds-index.jpg');
     /* background-image: url('../img/view/nerds-catalog.jpg'); */
-    /* background-size: 1440px auto;
+    background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 10000px; */
+    height: 10000px;
   }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -325,8 +325,8 @@ footer ul {
     min-height: 485px;
     margin: 0;
     padding: 0;
-    /* border: 1px solid brown;
-    box-sizing: border-box; */
+    border: 1px solid brown;
+    box-sizing: border-box;
 }
   .products-list {
     display: flex;
@@ -334,22 +334,24 @@ footer ul {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
-    padding: 82px 0 0 140px;
+    padding: 0 0 0 140px;
+    /* padding: 82px 0 0 140px; */
     min-height: 20px;
     list-style: none;
-    /* border: 1px solid greenyellow;
-    box-sizing: border-box; */
+    border: 1px solid greenyellow;
+    box-sizing: border-box;
 }
   .products-list-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
-    height: 427px;
-    margin-right: 100px;
+    min-height: 427px;
+    /* margin-right: 100px; */
+    margin: 80px 100px 0 0;
     padding: 0;
     min-height: 20px;
-    /* border: 1px solid green;
+/*     border: 1px solid green;
     box-sizing: border-box; */
 }
 .products-list-item-image {
@@ -363,15 +365,17 @@ footer ul {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    word-wrap: break-word;
     /* border: 1px solid green;
     box-sizing: border-box; */    
 }
 .products-list-item p {
     order: 2;
-    margin: 16px 0 0 0;
+    margin: 16px 0 36px 0;
     padding: 0;
+
     width: 280px;
-    min-height: 80px;
+    /* min-height: 80px; */
     /* border: 1px solid green;
     box-sizing: border-box; */
 }
@@ -379,6 +383,7 @@ footer ul {
     order: 5;
     margin: 0;
     padding: 0;
+    margin-top: auto;
 /*     border: 1px solid green;
     box-sizing: border-box; */
 }
@@ -461,8 +466,7 @@ footer ul {
     height: 2px;
     width: 1160px;
     background-color: #eeeeee;
-    /* background-color: red; */
-    
+    /* background-color: red; */   
 }
 .main-bottom {
     margin: 0;
