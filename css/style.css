@@ -360,7 +360,6 @@ footer ul {
 /*     border: 1px solid green;
     box-sizing: border-box; */
 }
-.products-list-item:nth-child(1),
 .products-list-item:nth-child(3n+1) {
     margin-left: 20px;
 }
@@ -632,7 +631,9 @@ footer ul {
     font-weight: 400;
 }
 .partners {
-    margin: 0;
+    /* margin: 0; */
+    width: 1200px;
+    margin: 0 auto;
     padding: 0;
     min-height: 180px;
     /* border: 1px solid orange;
@@ -643,7 +644,7 @@ footer ul {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 0 0 138px;
+    margin: 0;
     padding: 0;
     min-width: 30px;
     min-height: 20px;
@@ -659,6 +660,9 @@ footer ul {
     min-height: 20px;
     /* border: 1px solid blueviolet;
     box-sizing: border-box; */
+}
+.partners-items:nth-child(7n + 1) {
+    margin-left: 20px;
 }
 .partners-href {
     position: relative;
@@ -686,7 +690,7 @@ footer ul {
     min-height: 20px;
 }
 .partners-logo2{
-    margin: 48px 0 0 29px;
+    margin: 47px 0 0 25px;
     padding: 0;
     min-height: 20px;
 }
@@ -696,7 +700,7 @@ footer ul {
     min-height: 20px;
 }
 .partners-logo4{
-    margin: 54px 0 0 47px;
+    margin: 52px 0 0 45px;
     padding: 0;
     min-height: 20px;
 }
@@ -717,17 +721,26 @@ footer ul {
     /* border: 1px solid blueviolet;
     box-sizing: border-box; */
 }
-.geography{
-    display: flex;
-    flex-direction: row;
-    max-width: 1440px;
-    /* height: 416px; */
-    height: 0;
+.yandex-map {
     margin: 0;
     padding: 0;
+    position: relative;
+}
+.geography{
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* max-width: 1440px; */
+    /* height: 416px; */
+    width: 1160px;
+    margin: 0 auto;
+    height: 0;
+    padding: 0;
     /* background-image: url("../img/map.png"); */
-    /* border: 1px solid rgb(83, 43, 226);
-    box-sizing: border-box;  */ 
+    border: 1px solid rgb(83, 43, 226);
+    box-sizing: border-box;
 }
 .geography-address {
     display: flex;
@@ -1868,15 +1881,4 @@ input:invalid {
 }
 .modal-error {
     animation: shake 0.6s;
-}
-.yandex-map {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-.geography {
-    position: absolute;
-    left: 0;
-    top: 0;
-    /* z-index: 105; */
 }
