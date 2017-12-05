@@ -1,11 +1,11 @@
 body {
 /* Временно для сетки */
     /* background-image: url("../img/view/nerds-index.jpg"); */
-    background-image: url("../img/view/nerds-catalog.jpg");
-    background-size: 1440px auto;
+    /* background-image: url("../img/view/nerds-catalog.jpg"); */
+    /* background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 10000px;
+    height: 10000px; */
   }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -994,7 +994,7 @@ footer ul {
     content: "";
   
     position: absolute;
-    left: -36px; /* Координаты радиокнопок */
+    left: -37px; /* Координаты радиокнопок */
     top: -4px;
     width: 26px;
     height: 26px;
@@ -1004,11 +1004,12 @@ footer ul {
     box-sizing: border-box;
     border-radius: 50%;
  }
+ .filter-input-radio:focus + label::before,
  .filter-input-radio:hover + label::before {
     content: "";
   
     position: absolute;
-    left: -36px; /* Координаты радиокнопок */
+    left: -37px; /* Координаты радиокнопок */
     top: -4px;
     width: 26px;
     height: 26px;
@@ -1022,7 +1023,7 @@ footer ul {
     content: "";
   
     position: absolute;
-    left: -36px; /* Координаты радиокнопок */
+    left: -37px; /* Координаты радиокнопок */
     top: -4x;
     width: 26px;
     height: 26px;
@@ -1036,7 +1037,7 @@ footer ul {
   
     position: absolute;
     top: 5px; /* Координаты точек в радиокнопке */
-    left: -27px;
+    left: -28px;
 
     width: 8px;
     height: 8px;
@@ -1045,12 +1046,13 @@ footer ul {
     background-color: #b8b8b8;
     border-radius: 50%;
 }
+.filter-input-radio:checked:focus + label::after,
 .filter-input-radio:checked:hover + label::after {
     content: "";
   
     position: absolute;
     top: 5px; /* Координаты точек в радиокнопке */
-    left: -27px;
+    left: -28px;
 
     width: 8px;
     height: 8px;
@@ -1084,11 +1086,12 @@ footer ul {
     cursor: pointer;
     /* user-select: none; */
   }
+  .filter-option:focus label,
   .filter-option:hover label {
     position: relative;
   
     display: block;
-    color: #444444;
+    color: #111111;
     cursor: pointer;
     /* user-select: none; */
   }
@@ -1117,6 +1120,7 @@ footer ul {
     background-position: 0 0;
     opacity: 0.4;
 }
+.filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:hover + label::before {
     content: "";
     position: absolute;
@@ -1149,6 +1153,7 @@ footer ul {
     background-position: 0 0;
     opacity: 0.1;
 }
+.filter-input-checkbox:checked:focus + label::before,
 .filter-input-checkbox:checked:hover + label::before,
 .filter-input-checkbox:checked + label::before {
     display: none;
@@ -1169,8 +1174,9 @@ footer ul {
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
-  }
-  .filter-input-checkbox:checked:hover + label::after {
+}
+.filter-input-checkbox:checked:focus + label::after,
+.filter-input-checkbox:checked:hover + label::after {
     content: "";
   
     position: absolute;
@@ -1586,7 +1592,6 @@ background: #d7dcde;
     min-height: 50px;
     /* margin-bottom: 41px; */
     margin-bottom: 0;
-
     margin-top: 0;
     padding-top: 12px;
     padding-bottom: 5px;
