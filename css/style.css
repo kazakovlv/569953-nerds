@@ -715,7 +715,7 @@ footer ul {
 }
 .main-foter {
     max-width: 1440px;
-    min-height: 713px;
+    min-height: 416px;
     margin: 0 auto;
     padding: 0;
     /* border: 1px solid blueviolet;
@@ -725,9 +725,11 @@ footer ul {
     margin: 0;
     padding: 0;
     position: relative;
+    /* border: 1px solid blueviolet;
+    box-sizing: border-box; */
 }
 .geography{
-    left: 0;
+    left: 50%;
     top: 0;
     position: absolute;
     display: flex;
@@ -735,19 +737,20 @@ footer ul {
     /* max-width: 1440px; */
     /* height: 416px; */
     width: 1160px;
-    margin: 0 auto;
+    margin-left: -580px;
+    /* margin: 0 auto; */
     height: 0;
     padding: 0;
     /* background-image: url("../img/map.png"); */
-    border: 1px solid rgb(83, 43, 226);
-    box-sizing: border-box;
+    /* border: 1px solid rgb(83, 43, 226);
+    box-sizing: border-box; */
 }
 .geography-address {
     display: flex;
     flex-direction: column;
     width: 319px;
     height: 308px;
-    margin: 54px 0 0 140px;
+    margin: 54px 0 0 0;
     padding: 0;
     background-color: white;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
@@ -806,9 +809,10 @@ footer ul {
 .footer-social {
     display: flex;
     flex-direction: row;
-    max-width: 1440px;
-    height: 217px;
+    max-width: 1160px;
+    min-height: 100px;
     margin: 0 auto;
+    margin-top: 0;
     padding: 0;
     /* border: 1px solid rgb(83, 43, 226);
     box-sizing: border-box; */
@@ -816,12 +820,15 @@ footer ul {
 .footer-social ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 260px;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 400px;
     list-style: none;
     margin: 0 auto;
+    margin-top: 61px;
     padding: 0;
+    /* border: 1px solid rgb(83, 43, 226);
+    box-sizing: border-box; */
 }
 .social-button {
     display: flex;
@@ -829,8 +836,12 @@ footer ul {
     justify-content: center;
     width: 80px;
     height: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 50%;
     background-color: #e1e1e1;
+    /* border: 1px solid rgb(83, 43, 226);
+    box-sizing: border-box; */
 }
 .social-button:hover {
     color: #ffffff;
@@ -848,15 +859,15 @@ footer ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 900px;
-    height: 217px;
+    width: 760px;
+    min-height: 10px;
     margin: 0;
     padding: 0;
    /*  border: 1px solid rgb(43, 226, 171);
     box-sizing: border-box; */
 }
 .main-footer-tagline {
-    margin: 74px 0 0 0;
+    margin: 68px 0 0 0;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
