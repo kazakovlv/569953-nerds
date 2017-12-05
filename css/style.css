@@ -1,7 +1,7 @@
 body {
 /* Временно для сетки */
-    background-image: url("../img/view/nerds-index.jpg");
-    /* background-image: url("../img/view/nerds-catalog.jpg"); */
+    /* background-image: url("../img/view/nerds-index.jpg"); */
+    background-image: url("../img/view/nerds-catalog.jpg");
     background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -935,8 +935,9 @@ footer ul {
     box-sizing: border-box; */
 }
 .shop-header h1 {
+    width: 1160px;
     display: inline-block;
-    margin: 77px 140px 107px 140px;
+    margin: 77px 0 107px 0;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -946,7 +947,8 @@ footer ul {
     /* text-align: center; */
 }
 .shop-main {
-    margin: 0;
+    width: 1160px;
+    margin: 0 auto;
     padding: 0;
     min-height: 70px;
     display: flex;
@@ -958,7 +960,7 @@ footer ul {
 .filters-cost {
     width: 260px;
     min-height: 270px;
-    margin: 0 0 0 140px;
+    margin: 0;
     padding: 58px 0 0 0;
     /* border: 1px solid rgb(147, 226, 43);
     box-sizing: border-box; */
@@ -1230,6 +1232,7 @@ footer ul {
 .filter-item legend {
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 700;
 }
